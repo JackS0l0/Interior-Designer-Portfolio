@@ -417,9 +417,20 @@ body{
         }
         header{
             .discovery{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: 85%;
                 .float1{
+                    font-size: 4vw;
                     .f2{
-                        font-size: 5vw;
+                        font-size: 18vw;
+                        text-align: center;
+                    }
+                }
+                .btnToMain{
+                    .btn{
+                        font-size: 7vw;
                     }
                 }
             }

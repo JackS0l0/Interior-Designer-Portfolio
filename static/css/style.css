@@ -358,7 +358,20 @@ body footer .float1 .box .logo {
   body .navbarBlock .float2 .right {
     display: none;
   }
+  body header .discovery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 85%;
+  }
+  body header .discovery .float1 {
+    font-size: 4vw;
+  }
   body header .discovery .float1 .f2 {
-    font-size: 5vw;
+    font-size: 18vw;
+    text-align: center;
+  }
+  body header .discovery .btnToMain .btn {
+    font-size: 7vw;
   }
 }/*# sourceMappingURL=style.css.map */
