@@ -358,4 +358,7 @@ body footer .float1 .box .logo {
   body .navbarBlock .float2 .right {
     display: none;
   }
+  body header .discovery .float1 .f2 {
+    font-size: 5vw;
+  }
 }/*# sourceMappingURL=style.css.map */
