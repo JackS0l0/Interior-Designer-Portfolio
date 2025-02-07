@@ -1,0 +1,262 @@
+@font-face {
+  font-family: futuraPTMedium;
+  src: url(../font/FuturaPTMedium.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  max-width: 1920px;
+  margin: auto;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: futuraPTMedium;
+  background: #f9f7f4;
+  font-size: 1.2vw;
+}
+body p {
+  margin: 0;
+}
+body a {
+  text-decoration: none;
+}
+body .navbarBlock {
+  margin: 1vw 5vw;
+  display: flex;
+  flex-direction: column;
+}
+body .navbarBlock .float2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .navbarBlock .float2 span {
+  display: flex;
+  align-items: center;
+}
+body .navbarBlock .float2 span .theme {
+  margin-left: 1vw;
+  background: none;
+  border: 0;
+}
+body .navbarBlock .float2 span .logo {
+  font-size: 1.6vw;
+  font-weight: bold;
+}
+body .navbarBlock .float2 span .lang .dropdown a {
+  margin: 0;
+}
+body .navbarBlock .float2 span .lang .dropdown button {
+  margin-left: 1vw;
+  background: none;
+  border: 0;
+}
+body .navbarBlock .float2 .right a {
+  margin-left: 1vw;
+}
+body .navbarBlock .float2 .right .dropdown {
+  position: relative;
+  display: inline-block;
+}
+body .navbarBlock .float2 .right .dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f7f4;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+body .navbarBlock .float2 .right .dropdown .dropdown-content a {
+  color: rgb(30, 30, 30);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+body .navbarBlock .float2 .right .dropdown:hover .dropdown-content {
+  display: block;
+}
+body .navbarBlock a {
+  color: rgb(30, 30, 30);
+}
+body header {
+  position: relative;
+}
+body header .headerCarusel div img {
+  width: 100%;
+  height: 92.6vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: brightness(30%);
+}
+body header .discovery {
+  position: absolute;
+  top: 5vw;
+  width: 100%;
+}
+body header .discovery .float1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #e4e4e4;
+  font-size: 2vw;
+  text-transform: uppercase;
+}
+body header .discovery .float1 .f2 {
+  font-size: 5vw;
+}
+body header .discovery .float1 .f3 {
+  color: goldenrod;
+}
+body header .discovery .btnToMain {
+  display: flex;
+  justify-content: center;
+  margin-top: 15vw;
+}
+body header .discovery .btnToMain .btn {
+  border: 0.1vw solid goldenrod;
+  color: #e4e4e4;
+  font-size: 2vw;
+  border-radius: 0;
+}
+body main .blogHead {
+  margin: 2vw 5vw;
+  display: flex;
+  align-items: center;
+}
+body main .blogHead .line {
+  border: 0.05vw solid rgb(30, 30, 30);
+  width: 100%;
+}
+body main .blogHead .title {
+  text-transform: uppercase;
+  margin: 0 1vw 0.5vw 1vw;
+  white-space: nowrap;
+}
+body main .projectsBlock {
+  margin: 2vw 5vw;
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: auto auto auto;
+  grid-gap: 2vw;
+}
+body main .projectsBlock .project {
+  width: 27vw;
+  height: 17vw;
+  border: 0.1vw solid rgb(30, 30, 30);
+  overflow: hidden;
+}
+body main .projectsBlock .project a {
+  position: relative;
+}
+body main .projectsBlock .project a .img img {
+  width: 100%;
+  height: 17vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 1s;
+}
+body main .projectsBlock .project a .info {
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 0.5vw;
+  position: absolute;
+  background-color: rgba(30, 30, 30, 0.5);
+  color: #e4e4e4;
+}
+body main .projectsBlock .project a .info p {
+  line-clamp: 2;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-size: 1.4vw;
+}
+body main .projectsBlock .project:hover a .img img {
+  transform: scale(1.1);
+}
+body main .advantages {
+  margin: 2vw 5vw;
+}
+body main .advantages div .advantage {
+  display: flex;
+  flex-direction: column;
+  margin: 0 2vw;
+}
+body main .advantages div .advantage .img {
+  display: flex;
+  justify-content: center;
+}
+body main .advantages div .advantage .img img {
+  width: 4vw;
+  height: 4vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  margin-bottom: 0.5vw;
+}
+body main .advantages div .advantage .info {
+  text-align: center;
+}
+body main .aboutInMain {
+  margin: 2vw 5vw;
+  display: flex;
+  align-items: center;
+}
+body main .aboutInMain .left {
+  text-align: center;
+}
+body main .aboutInMain .right .img img {
+  width: 40vw;
+  height: 40vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+body main .contactInMain {
+  margin: 2vw 5vw;
+  border: 0.2vw solid goldenrod;
+  text-align: center;
+}
+body main .contactInMain a {
+  font-size: 3vw;
+  color: rgb(30, 30, 30);
+}
+
+.dark-mode {
+  background-color: rgb(30, 30, 30);
+  color: #e4e4e4;
+}
+.dark-mode a {
+  color: #e4e4e4;
+}
+.dark-mode i {
+  color: #e4e4e4;
+}
+.dark-mode .btn {
+  color: #e4e4e4;
+}
+.dark-mode .navbarBlock a {
+  color: #e4e4e4;
+}
+.dark-mode .navbarBlock .float2 span .lang .dropdown .dropdown-menu {
+  background-color: rgb(30, 30, 30);
+}
+.dark-mode .navbarBlock .float2 span .lang .dropdown .dropdown-menu .dropdown-item {
+  background: none;
+}
+.dark-mode main .blogHead .line {
+  border-color: #e4e4e4;
+}
+.dark-mode main .contactInMain a {
+  color: #e4e4e4;
+}/*# sourceMappingURL=style.css.map */

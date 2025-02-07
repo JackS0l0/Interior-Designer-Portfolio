@@ -1,0 +1,35 @@
+{% load static %}
+{% load i18n %}
+<footer>
+    <div class="float1">
+        <div class="box">
+            <span>
+                <a href="#" class="logo">Logo</a>
+            </span>
+            <span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto maxime quas non quod dolores incidunt? Exercitationem non, nulla rerum illum repellendus aut architecto reiciendis qui iure unde! Iure, rem hic?</p>
+            </span>
+        </div>
+        <div class="box">
+            <p class="logo">{% trans 'Разделы' %}</p>
+            <span>
+                <a href="#">{% trans 'Свяжитесь с нами' %}</a>
+                <a href="#">{% trans 'Информация о нас' %}</a>
+                <a href="#">{% trans 'Услуги' %}</a>
+                <a href="#">{% trans 'Все проекты' %}</a>
+            </span>
+        </div>
+        <div class="box">
+            <p class="logo">{% trans 'Разделы' %}</p>
+            <span>
+                <a href="#">{% trans 'Партнеры' %}</a>
+                <a href="#">{% trans 'FAQ.' %}</a>
+                <a href="#">{% trans 'Правилы сайта' %}</a>
+                <a href="#">{% trans 'Правилы заказа' %}</a>
+            </span>
+        </div>
+    </div>
+    <div class="float0">
+        <p>{% trans 'Все права защищены' %} &copy; {% now "Y" %}</p>
+    </div>
+</footer>
