@@ -365,6 +365,13 @@ body footer .float1 .box .logo {
   body .navbarBlock .float2 .right {
     display: none;
   }
+  body .navbarBlock .float2 .offcanvas .offcanvas-body .bodyClass .accordion .accordion-item .accordion-collapse .accordion-body {
+    display: flex;
+    flex-direction: column;
+  }
+  body .navbarBlock .float2 .offcanvas .offcanvas-body .bodyClass .accordion .accordion-item .accordion-collapse .accordion-body a {
+    font-size: 5vw;
+  }
   body header .discovery {
     display: flex;
     flex-direction: column;

@@ -422,6 +422,25 @@ body{
                 .right{
                     display: none;
                 }
+                .offcanvas{
+                    .offcanvas-body{
+                        .bodyClass{
+                            .accordion{
+                                .accordion-item{
+                                    .accordion-collapse{
+                                        .accordion-body{
+                                            display: flex;
+                                            flex-direction: column;
+                                            a{
+                                                font-size: 5vw;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
         header{
