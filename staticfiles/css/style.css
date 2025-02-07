@@ -355,6 +355,9 @@ body footer .float1 .box .logo {
   }
 }
 @media only screen and (max-width: 1000px) {
+  body .navbarBlock .float2 span .logo {
+    font-size: 9vw;
+  }
   body .navbarBlock .float2 .right {
     display: none;
   }
