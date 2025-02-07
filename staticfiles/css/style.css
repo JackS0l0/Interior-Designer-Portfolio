@@ -358,6 +358,10 @@ body footer .float1 .box .logo {
   body .navbarBlock .float2 span .logo {
     font-size: 9vw;
   }
+  body .navbarBlock .float2 span button {
+    border: 0;
+    font-size: 6vw;
+  }
   body .navbarBlock .float2 .right {
     display: none;
   }
