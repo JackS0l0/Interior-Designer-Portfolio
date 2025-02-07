@@ -23,6 +23,7 @@ body{
     }
     a{
         text-decoration: none;
+        color: $bk;
     }
     background: $whbk;
     font-size: 1.2vw;
@@ -241,11 +242,89 @@ body{
         }
         .contactInMain{
             margin: 2vw 5vw;
-            border: 0.2vw solid goldenrod;
+            border: 0.2vw solid #daa520;
             text-align: center;
             a{
                 font-size: 3vw;
                 color: $bk;
+            }
+        }
+        .contactBlockInMain{
+            margin: 1vw 5vw;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            .left{
+                img{
+                    width: 30vw;
+                }
+            }
+            .right{
+                display: flex;
+                width: 30vw;
+                flex-direction: column;
+                a{
+                    color: $bk;
+                }
+                .social{
+                    a{
+                        color: rgb(21, 71, 172);
+                    }
+                }
+            }
+        }
+        .partnersBlock{
+            display: grid;
+            margin: 1vw 5vw;
+            justify-content: space-between;
+            grid-template-columns: auto auto auto auto auto auto;
+            gap: 2vw;
+            .block{
+                border: 0.1vw solid $bk;
+                background: rgba(255, 255, 255, 0.2);
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                backdrop-filter: blur(5px);
+                -webkit-backdrop-filter: blur(5px);
+                border: 1px solid rgba(30, 30, 30, 0.3);
+                border-radius: 0.5vw;
+                overflow: hidden;
+                a{
+                    img{
+                        width: 10vw;
+                        padding: 1vw;
+                        height: 10vw;
+                        object-fit: cover;
+                        transition: 1s;
+                    }
+                }
+            }
+            .block:hover{
+                a{
+                    img{
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        margin: 2vw 5vw 1vw 5vw;
+        padding-top: 2vw;
+        border-top: 0.1vw solid $bk;
+        display: flex;
+        flex-direction: column;
+        .float1{
+            display: flex;
+            justify-content: space-between;
+            .box{
+                width: 30vw;
+                span{
+                    display: flex;
+                    flex-direction: column;
+                }
+                .logo{
+                    font-size: 2vw;
+                }
             }
         }
     }
@@ -270,6 +349,9 @@ body{
             span{
                 .lang{
                     .dropdown{
+                        .dropdown-toggle {
+                            color: $wh !important;
+                        }
                         .dropdown-menu{
                             background-color: $bk;
                             .dropdown-item{
@@ -292,5 +374,24 @@ body{
                 color: $wh;
             }
         }
+        .contactBlockInMain{
+            .right{
+                a{
+                    color: $wh;
+                }
+                .address{
+                    font-size: 1.5vw;
+                }
+                .social{
+                    margin-top: 1vw;
+                    a{
+                        margin-right: 1vw;
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        border-color: $wh;
     }
 }

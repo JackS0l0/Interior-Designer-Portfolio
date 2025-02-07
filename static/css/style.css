@@ -25,6 +25,7 @@ body p {
 }
 body a {
   text-decoration: none;
+  color: rgb(30, 30, 30);
 }
 body .navbarBlock {
   margin: 1vw 5vw;
@@ -224,12 +225,81 @@ body main .aboutInMain .right .img img {
 }
 body main .contactInMain {
   margin: 2vw 5vw;
-  border: 0.2vw solid goldenrod;
+  border: 0.2vw solid #daa520;
   text-align: center;
 }
 body main .contactInMain a {
   font-size: 3vw;
   color: rgb(30, 30, 30);
+}
+body main .contactBlockInMain {
+  margin: 1vw 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+body main .contactBlockInMain .left img {
+  width: 30vw;
+}
+body main .contactBlockInMain .right {
+  display: flex;
+  width: 30vw;
+  flex-direction: column;
+}
+body main .contactBlockInMain .right a {
+  color: rgb(30, 30, 30);
+}
+body main .contactBlockInMain .right .social a {
+  color: rgb(21, 71, 172);
+}
+body main .partnersBlock {
+  display: grid;
+  margin: 1vw 5vw;
+  justify-content: space-between;
+  grid-template-columns: auto auto auto auto auto auto;
+  gap: 2vw;
+}
+body main .partnersBlock .block {
+  border: 0.1vw solid rgb(30, 30, 30);
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(30, 30, 30, 0.3);
+  border-radius: 0.5vw;
+  overflow: hidden;
+}
+body main .partnersBlock .block a img {
+  width: 10vw;
+  padding: 1vw;
+  height: 10vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 1s;
+}
+body main .partnersBlock .block:hover a img {
+  transform: scale(1.1);
+}
+body footer {
+  margin: 2vw 5vw 1vw 5vw;
+  padding-top: 2vw;
+  border-top: 0.1vw solid rgb(30, 30, 30);
+  display: flex;
+  flex-direction: column;
+}
+body footer .float1 {
+  display: flex;
+  justify-content: space-between;
+}
+body footer .float1 .box {
+  width: 30vw;
+}
+body footer .float1 .box span {
+  display: flex;
+  flex-direction: column;
+}
+body footer .float1 .box .logo {
+  font-size: 2vw;
 }
 
 .dark-mode {
@@ -248,6 +318,9 @@ body main .contactInMain a {
 .dark-mode .navbarBlock a {
   color: #e4e4e4;
 }
+.dark-mode .navbarBlock .float2 span .lang .dropdown .dropdown-toggle {
+  color: #e4e4e4 !important;
+}
 .dark-mode .navbarBlock .float2 span .lang .dropdown .dropdown-menu {
   background-color: rgb(30, 30, 30);
 }
@@ -259,4 +332,19 @@ body main .contactInMain a {
 }
 .dark-mode main .contactInMain a {
   color: #e4e4e4;
+}
+.dark-mode main .contactBlockInMain .right a {
+  color: #e4e4e4;
+}
+.dark-mode main .contactBlockInMain .right .address {
+  font-size: 1.5vw;
+}
+.dark-mode main .contactBlockInMain .right .social {
+  margin-top: 1vw;
+}
+.dark-mode main .contactBlockInMain .right .social a {
+  margin-right: 1vw;
+}
+.dark-mode footer {
+  border-color: #e4e4e4;
 }/*# sourceMappingURL=style.css.map */

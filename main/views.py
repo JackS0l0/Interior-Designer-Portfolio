@@ -27,7 +27,7 @@ def set_language(request, language):
 def index(request):
     data = common_data()
     context={
-        'title':'interior Designer Portfolio',
+        'title':'Interior Designer Portfolio',
         'article':Products.objects.all().order_by('-date'),
     }
     data.update(context)
