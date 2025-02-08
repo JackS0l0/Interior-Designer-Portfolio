@@ -421,4 +421,18 @@ body footer .float1 .box .logo {
   body header .discovery .btnToMain .btn {
     font-size: 7vw;
   }
+  body main .projectsBlock {
+    grid-template-columns: auto;
+  }
+  body main .projectsBlock .project {
+    width: 90vw;
+    margin-bottom: 3vw;
+    height: 90vw;
+  }
+  body main .projectsBlock .project a .img img {
+    height: 90vw;
+  }
+  body main .projectsBlock .project a .info p {
+    font-size: 6vw;
+  }
 }/*# sourceMappingURL=style.css.map */

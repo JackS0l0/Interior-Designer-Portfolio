@@ -504,5 +504,27 @@ body{
                 }
             }
         }
+        main{
+            .projectsBlock{
+                grid-template-columns: auto;
+                .project{
+                    width: 90vw;
+                    margin-bottom: 3vw;
+                    height: 90vw;
+                    a{
+                        .img{
+                            img{
+                                height: 90vw;
+                            }
+                        }
+                        .info{
+                            p{
+                                font-size: 6vw;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
