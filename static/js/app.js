@@ -29,6 +29,26 @@ $('.advantages').slick({
         },
     ]
 });
+$('.advantagesForMob').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    speed: 19000,
+    infinite: true,
+    dots: false,
+    arrows: false,
+    pauseOnHover:false,
+    responsive: [
+        {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            }
+        },
+    ]
+});
 // dark-mode
 document.addEventListener("DOMContentLoaded", () => {
     const toggleButtons = document.querySelectorAll(".theme-toggle"); // Bütün butonları seç

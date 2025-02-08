@@ -372,6 +372,9 @@ body footer .float1 .box .logo {
   body .navbarBlock .float2 .mobile {
     display: none;
   }
+  body main .advantagesForMob {
+    display: none;
+  }
 }
 @media only screen and (max-width: 1000px) {
   body .navbarBlock .float2 span .logo {
@@ -435,11 +438,14 @@ body footer .float1 .box .logo {
   body main .projectsBlock .project a .info p {
     font-size: 6vw;
   }
-  body main .advantages div .advantage .img img {
+  body main .advantages {
+    display: none;
+  }
+  body main .advantagesForMob div .advantage .img img {
     width: 40vw;
     height: 40vw;
   }
-  body main .advantages div .advantage .info {
+  body main .advantagesForMob div .advantage .info {
     font-size: 5vw;
   }
 }/*# sourceMappingURL=style.css.map */

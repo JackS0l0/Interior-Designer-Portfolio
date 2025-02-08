@@ -431,6 +431,11 @@ body{
                 }
             }
         }
+        main{
+            .advantagesForMob{
+                display: none;
+            }
+        }
     }
 }
 @media only screen and (max-width: 1000px){
@@ -526,6 +531,9 @@ body{
                 }
             }
             .advantages{
+                display: none;
+            }
+            .advantagesForMob{
                 div{
                     .advantage{
                         .img{
