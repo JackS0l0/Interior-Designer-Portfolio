@@ -395,6 +395,9 @@ body footer .float1 .box .logo {
   body .navbarBlock .float2 .mobile .offcanvas .offcanvas-body .bodyClass a {
     margin-left: 4vw;
   }
+  body .navbarBlock .float2 .mobile .offcanvas .offcanvas-body .bodyClass .theme {
+    margin-top: 5vw;
+  }
   body .navbarBlock .float2 .mobile .offcanvas .offcanvas-body .bodyClass .accordion .accordion-item .accordion-collapse .accordion-body {
     display: flex;
     flex-direction: column;
