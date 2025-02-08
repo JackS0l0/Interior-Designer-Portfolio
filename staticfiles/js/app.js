@@ -22,21 +22,26 @@ $('.advantages').slick({
 });
 // dark-mode
 document.addEventListener("DOMContentLoaded", () => {
-    const toggleButton = document.getElementById("theme-toggle");
+    const toggleButtons = document.querySelectorAll(".theme-toggle"); // Bütün butonları seç
     const body = document.body;
-    const icon = toggleButton.querySelector("i");
-    if (localStorage.getItem("theme") === "dark") {
-        body.classList.add("dark-mode");
-        icon.classList.replace("bi-moon-stars", "bi-brightness-high");
-    }
-    toggleButton.addEventListener("click", () => {
-        body.classList.toggle("dark-mode");
-        if (body.classList.contains("dark-mode")) {
-            localStorage.setItem("theme", "dark");
+    toggleButtons.forEach((button) => {
+        const icon = button.querySelector("i"); // Hər buton üçün ikon tap
+        if (localStorage.getItem("theme") === "dark") {
+            body.classList.add("dark-mode");
             icon.classList.replace("bi-moon-stars", "bi-brightness-high");
-        } else {
-            localStorage.setItem("theme", "light");
-            icon.classList.replace("bi-brightness-high", "bi-moon-stars");
         }
+        button.addEventListener("click", () => {
+            body.classList.toggle("dark-mode");
+            const isDarkMode = body.classList.contains("dark-mode");
+            localStorage.setItem("theme", isDarkMode ? "dark" : "light");
+            toggleButtons.forEach((btn) => {
+                const btnIcon = btn.querySelector("i");
+                if (isDarkMode) {
+                    btnIcon.classList.replace("bi-moon-stars", "bi-brightness-high");
+                } else {
+                    btnIcon.classList.replace("bi-brightness-high", "bi-moon-stars");
+                }
+            });
+        });
     });
 });

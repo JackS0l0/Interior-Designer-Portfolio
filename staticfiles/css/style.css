@@ -384,7 +384,7 @@ body footer .float1 .box .logo {
   body .navbarBlock .float2 .right {
     display: none;
   }
-  body .navbarBlock .float2 .mobile .offcanvas button {
+  body .navbarBlock .float2 .mobile button {
     background: none;
   }
   body .navbarBlock .float2 .mobile .offcanvas .offcanvas-body .bodyClass {

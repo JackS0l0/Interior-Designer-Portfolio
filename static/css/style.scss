@@ -450,10 +450,10 @@ body{
                     display: none;
                 }
                 .mobile{
+                    button{
+                        background: none;
+                    }
                     .offcanvas{
-                        button{
-                            background: none;
-                        }
                         .offcanvas-body{
                             .bodyClass{
                                 font-size: 6vw;
