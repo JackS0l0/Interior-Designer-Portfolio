@@ -39,15 +39,6 @@ $('.advantagesForMob').slick({
     dots: false,
     arrows: false,
     pauseOnHover:false,
-    responsive: [
-        {
-            breakpoint: 1200,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-            }
-        },
-    ]
 });
 // dark-mode
 document.addEventListener("DOMContentLoaded", () => {

@@ -441,11 +441,22 @@ body footer .float1 .box .logo {
   body main .advantages {
     display: none;
   }
+  body main .advantagesForMob {
+    display: block;
+  }
+  body main .advantagesForMob div .advantage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   body main .advantagesForMob div .advantage .img img {
     width: 40vw;
     height: 40vw;
   }
   body main .advantagesForMob div .advantage .info {
     font-size: 5vw;
+    width: 50vw;
+    text-align: center;
   }
 }/*# sourceMappingURL=style.css.map */

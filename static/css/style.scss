@@ -534,8 +534,13 @@ body{
                 display: none;
             }
             .advantagesForMob{
+                display: block;
                 div{
                     .advantage{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
                         .img{
                             img{
                                 width: 40vw;
@@ -544,6 +549,8 @@ body{
                         }
                         .info{
                             font-size: 5vw;
+                            width: 50vw;
+                            text-align: center;
                         }
                     }
                 }
