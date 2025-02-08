@@ -459,4 +459,28 @@ body footer .float1 .box .logo {
     width: 50vw;
     text-align: center;
   }
+  body main .aboutInMain {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  body main .aboutInMain .right {
+    display: none;
+  }
+  body main .aboutInMain .left {
+    font-size: 4vw;
+  }
+  body main .contactBlockInMain {
+    flex-direction: column;
+    font-size: 4vw;
+  }
+  body main .contactBlockInMain .right {
+    width: 100%;
+  }
+  body main .contactBlockInMain .right .address {
+    font-size: 4vw !important;
+  }
+  body footer .float1 {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
