@@ -21,7 +21,7 @@ $('.advantages').slick({
     pauseOnHover:false,
     responsive: [
         {
-            breakpoint: 1024,
+            breakpoint: 1000,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
