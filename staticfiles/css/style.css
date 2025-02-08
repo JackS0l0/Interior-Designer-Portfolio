@@ -483,4 +483,7 @@ body footer .float1 .box .logo {
   body footer .float1 {
     display: none;
   }
+  body footer .float0 {
+    font-size: 4vw;
+  }
 }/*# sourceMappingURL=style.css.map */
