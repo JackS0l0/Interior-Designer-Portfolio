@@ -36,11 +36,11 @@
             <button class="theme" id="theme-toggle"><i class="bi bi-moon-stars"></i></button>
         </span>
         <span class="mobile">
-            <button class="" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="bi bi-list"></i></button>
+            <button class="mobilemenu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="bi bi-list"></i></button>
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                 <div class="offcanvas-header">
                     <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"><i class="bi bi-x-lg"></i></button>
                 </div>
                 <div class="offcanvas-body">
                     <div class="bodyClass">
@@ -83,6 +83,8 @@
                             </div>
                         </div>
                         <!--  -->
+                        <a href="#">{% trans 'О нас' %}</a>
+                        <a href="#">{% trans 'Контакты' %}</a>
                     </div>
                 </div>
             </div>

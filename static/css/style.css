@@ -327,6 +327,25 @@ body footer .float1 .box .logo {
 .dark-mode .navbarBlock .float2 span .lang .dropdown .dropdown-menu .dropdown-item {
   background: none;
 }
+.dark-mode .navbarBlock .float2 .mobile .mobilemenu {
+  background: none;
+  color: #e4e4e4;
+}
+.dark-mode .navbarBlock .float2 .mobile .offcanvas {
+  background-color: rgb(30, 30, 30);
+}
+.dark-mode .navbarBlock .float2 .mobile .offcanvas .offcanvas-header button {
+  color: #e4e4e4;
+}
+.dark-mode .navbarBlock .float2 .mobile .offcanvas .offcanvas-body .bodyClass .accordion {
+  background-color: rgb(30, 30, 30);
+}
+.dark-mode .navbarBlock .float2 .mobile .offcanvas .offcanvas-body .bodyClass .accordion .accordion-item {
+  background-color: rgb(30, 30, 30);
+}
+.dark-mode .navbarBlock .float2 .mobile .offcanvas .offcanvas-body .bodyClass .accordion .accordion-item button {
+  color: #e4e4e4;
+}
 .dark-mode main .blogHead .line {
   border-color: #e4e4e4;
 }
@@ -365,11 +384,22 @@ body footer .float1 .box .logo {
   body .navbarBlock .float2 .right {
     display: none;
   }
-  body .navbarBlock .float2 .offcanvas .offcanvas-body .bodyClass .accordion .accordion-item .accordion-collapse .accordion-body {
+  body .navbarBlock .float2 .mobile .offcanvas button {
+    background: none;
+  }
+  body .navbarBlock .float2 .mobile .offcanvas .offcanvas-body .bodyClass {
+    font-size: 6vw;
     display: flex;
     flex-direction: column;
   }
-  body .navbarBlock .float2 .offcanvas .offcanvas-body .bodyClass .accordion .accordion-item .accordion-collapse .accordion-body a {
+  body .navbarBlock .float2 .mobile .offcanvas .offcanvas-body .bodyClass a {
+    margin-left: 4vw;
+  }
+  body .navbarBlock .float2 .mobile .offcanvas .offcanvas-body .bodyClass .accordion .accordion-item .accordion-collapse .accordion-body {
+    display: flex;
+    flex-direction: column;
+  }
+  body .navbarBlock .float2 .mobile .offcanvas .offcanvas-body .bodyClass .accordion .accordion-item .accordion-collapse .accordion-body a {
     font-size: 5vw;
   }
   body header .discovery {
