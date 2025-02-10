@@ -9,6 +9,7 @@ class MainTexts(models.Model):
     phone=models.CharField('Телефон',max_length=200,default='none')
     whatsapp=models.CharField('Whatsapp',max_length=200,default='none')
     telegram=models.CharField('Telegram',max_length=200,default='none')
+    logo=models.URLField('Логотип',default='none')
     def __str__(self):
         return f'Все тексты из главной страницы'
     class Meta:
@@ -30,6 +31,7 @@ class Partners(models.Model):
         verbose_name = 'Партнер'
         verbose_name_plural = 'Партнеры'
 class AboutInFooter(models.Model):
+    logo=models.URLField('Логотип',default='none')
     txt=models.TextField('Текст',default='none')
     def __str__(self):
         return f'О нас на футере'
