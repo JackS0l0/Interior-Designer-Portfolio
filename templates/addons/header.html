@@ -2,21 +2,22 @@
 {% load i18n %}
 <header>
     <div class="headerCarusel">
-        <div>
-            <img src="https://vproekte.com/wp-content/uploads-webpc/uploads/2022/09/hllrkt_f_16-3.jpg.webp" alt="">
-        </div>
-        <div>
-            <img src="https://vproekte.com/wp-content/uploads/2024/10/a.277_hllrkt_v1_17.jpg" alt="">
-        </div>
+        {% for post in hb %}
+            <div>
+                <img src="{{post.img}}" alt="">
+            </div>
+        {% endfor %}
     </div>
     <div class="discovery">
         <div class="float1">
-            <p class="f1">Новый уровень жизни, а не просто</p>
-            <p class="f2">Дизайн интерьера</p>
-            <p class="f3">проктируем | сопровождаем | реализуем</p>
+            {% for post in mt %}
+                <p class="f1">{{post.float1}}</p>
+                <p class="f2">{{post.float2}}</p>
+                <p class="f3">{{post.float3}}</p>
+            {% endfor %}
         </div>
         <div class="btnToMain">
-            <a href="#main" class="btn">Исследуй нас</a>
+            <a href="#main" class="btn">{% trans 'Исследуй нас' %}</a>
         </div>
     </div>
 </header>

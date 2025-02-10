@@ -17,8 +17,10 @@ class CategoriesAdmin(TranslationAdmin):
 @admin.register(Products)
 class ProductsAdmin(TranslationAdmin):
     group_fieldsets = True  
-    list_display = ['name','desc']
+    list_display = ['name','cate']
     fields=['name','cate','img','desc','date','slug']
+    list_filter=['date','cate']
+    search_fields=['name','id']
     class Media:
         js = (
             'http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js',

@@ -28,7 +28,7 @@ def index(request):
     data = common_data()
     context={
         'title':'Interior Designer Portfolio',
-        'article':Products.objects.all().order_by('-date'),
+        'article':Products.objects.all().order_by('-date')[0:6],
     }
     data.update(context)
     return render(request,'index.html',data)
